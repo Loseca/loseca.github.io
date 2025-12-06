@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tu Nombre - Perfil Profesional WP8</title>
+
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+
+    <style>
+        /* Imita la tipografía limpia de Windows Phone */
+        body {
+            font-family: "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+            background-color: #000000; /* Fondo oscuro (usa #FFFFFF para fondo claro) */
+            color: #ffffff;
+            padding-bottom: 80px; /* Espacio para el menú inferior */
+        }
+        .container {
+            padding-top: 0;
+        }
+        /* Título de la Aplicación (Header) */
+        .app-title {
+            font-weight: 100; /* Fuente delgada */
+            font-size: 3rem;
+            line-height: 1.2;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            text-transform: lowercase; /* Títulos a menudo en minúsculas */
+        }
+        /* Estilo para los Pivot (navegación horizontal) */
+        .tabs {
+            border: none;
+            background-color: transparent;
+        }
+        .tabs-line li a {
+            font-size: 1.5rem; /* Pestañas grandes, delgadas */
+            font-weight: 300;
+            text-transform: uppercase;
+            color: #ccc;
+        }
+        .tabs-line li.active a {
+            color: #0078D7; /* Color de acento azul */
+            border-bottom: 4px solid #0078D7;
+        }
+        /* Estilo de la Barra de Aplicación (Menú Inferior) */
+        .app-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #1a1a1a; /* Fondo oscuro para el menú */
+            padding: 5px 10px;
+            z-index: 100;
+            display: flex;
+            justify-content: space-around;
+        }
+        .app-bar-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.75rem;
+            opacity: 0.8;
+            padding: 5px;
+        }
+        .app-bar-item:hover {
+            opacity: 1;
+            color: #0078D7;
+        }
+    </style>
+</head>
+<body class="metro">
+
+    <div class="container">
+        
+        <h1 class="app-title fg-cyan">tu nombre.</h1>
+        <h2 class="fg-white pl-4">currículum profesional</h2>
+
+        <div data-role="tabs" data-tabs-style="line">
+            
+            <ul class="tabs-line">
+                <li><a href="#cv-content">CV</a></li>
+                <li><a href="#portfolio-content">PORTAFOLIO</a></li>
+                <li><a href="#contact-content">CONTACTO</a></li>
+            </ul>
+
+            <div class="tabs-content p-4">
+                
+                <div id="cv-content">
+                    <h3 class="fg-blue mt-0">Resumen Ejecutivo</h3>
+                    <p>
+                        [Tu resumen profesional: Usa tipografía limpia y mucho espacio vertical.]
+                    </p>
+                    
+                    <h3 class="fg-green">Experiencia Laboral</h3>
+                    <div class="border-left bd-green pl-3 mb-4">
+                        <h4 class="mt-0">Título del Puesto <small>@ Compañía</small></h4>
+                        <p class="fg-gray">2020 - Actualidad</p>
+                        <ul>
+                            <li>Énfasis en logros cuantificables.</li>
+                            <li>Usa listas para mantener la limpieza visual.</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="fg-orange">Habilidades Técnicas</h3>
+                    <div class="tags">
+                        <span class="tag bg-lightBlue fg-white">JavaScript</span>
+                        <span class="tag bg-lightBlue fg-white">HTML5</span>
+                        <span class="tag bg-lightBlue fg-white">CSS3</span>
+                        </div>
+                </div>
+
+                <div id="portfolio-content">
+                    <h3 class="fg-blue mt-0">Proyectos Destacados</h3>
+                    <div class="border-bottom bd-lightGray pb-3 mb-3">
+                        <h4 class="mt-0">Nombre del Proyecto</h4>
+                        <p>Descripción breve del proyecto y tu rol en él. [Enlace al proyecto aquí].</p>
+                    </div>
+                    </div>
+
+                <div id="contact-content">
+                    <h3 class="fg-blue mt-0">Encuéntrame en línea</h3>
+                    <ul class="unstyled-list">
+                        <li><span class="mif-envelop mr-2 fg-blue"></span> <a href="mailto:tuemail@ejemplo.com" class="fg-white">tuemail@ejemplo.com</a></li>
+                        <li><span class="mif-linkedin mr-2 fg-blue"></span> <a href="https://www.linkedin.com/" target="_blank" class="fg-white">LinkedIn/tu-perfil</a></li>
+                        <li><span class="mif-github mr-2 fg-blue"></span> <a href="https://github.com/" target="_blank" class="fg-white">GitHub/tu-usuario</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="app-bar">
+        <a href="#cv-content" class="app-bar-item">
+            <span class="mif-profile mif-2x"></span>
+            <span>CV</span>
+        </a>
+        <a href="#portfolio-content" class="app-bar-item">
+            <span class="mif-dashboard mif-2x"></span>
+            <span>Portafolio</span>
+        </a>
+        <a href="mailto:tuemail@ejemplo.com" class="app-bar-item">
+            <span class="mif-envelop mif-2x"></span>
+            <span>Email</span>
+        </a>
+    </div>
+
+
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+</body>
+</html>
